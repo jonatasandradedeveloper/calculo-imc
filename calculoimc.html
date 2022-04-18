@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculo Imc</title>
+</head>
+
+<body class="text-center">
+
+    <main class="form-signin">
+        <form onsubmit="return false">
+            <h1 class="h3 mb-3 fw-normal">Cálculo de IMC</h1>
+
+            <div class="form-floating">
+                <input type="number" class="form-control" id="floatingWeight" placeholder="78.8" step=0.1 required>
+                <label for="floatingWeight">Peso - 78.8</label>
+            </div>
+            <div class="form-floating">
+                <input type="number" class="form-control" id="floatingheight" placeholder="1.72" step=0.01 required>
+                <label for="floatingheight">Altura - 1.72</label>
+            </div>
+            <p id="imc" class="mt-5 mb-3 text-muted"></p>
+            <button type='submit' class="w-100 btn btn-lg btn-primary" onclick="calculaimc()">Calcular</button>
+        </form>
+
+    </main>
+</body>
+<script src="./javascript.js"></script>
+
+</html>
